@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         val button2: Button = findViewById(R.id.button2)
         button2.setOnClickListener {
             Toast.makeText(
-                getApplicationContext(),
+                this@MainActivity,
                 "Hello, World!",
                 Toast.LENGTH_SHORT
             ).show()
@@ -34,16 +34,5 @@ class MainActivity : AppCompatActivity() {
         val tvCopyTitle: TextView = findViewById(R.id.textView4)
         tvCopyTitle.text = NewTitle.newTitleCopy.title
 
-        //Вывести значения из разных циклов в консоль, используя примеры из методических материалов.
-        fun cycle1() {
-            for (i in 1..10) {
-                println(i)
-            }
-            var count: Int = 0
-            while (count <= 10) {
-                count += 1
-                println(count)
-            }
-        }
     }
 }

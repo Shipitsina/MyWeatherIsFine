@@ -12,8 +12,7 @@ fun main() {
         println(count)
     }
 
-    val weatherList: List<Weather>
-    for(weather in weatherList) {
-        print(weather.town)
+    repeat(5){
+        println("Hello, world!")
     }
 }
